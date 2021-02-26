@@ -1,0 +1,154 @@
+{
+    "items": [
+      {
+        "name": "Skills",
+        "content": [
+          {
+            "title": "HTML5"
+          },
+          {
+            "title": "CSS"
+          },
+          {
+            "title": "Sass"
+          },
+          {
+            "title": "JavaScript"
+          },
+          {
+            "title": "TypeScript"
+          },
+          {
+            "title": "AngularJS"
+          },
+          {
+            "title": "Angular 7-10"
+          },
+          {
+            "title": "JSON"
+          },
+          {
+            "title": "Wordpress"
+          },
+          {
+            "title": "Photoshop"
+          },
+          {
+            "title": "Illustrator"
+          },
+          {
+            "title": "After Effects"
+          }
+        ]
+      },
+      {
+        "name": "Codepens",
+        "content": [
+          {
+            "title": "HTML5 Video Player",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/LmxqKa",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/LmxqKa"
+          },
+          {
+            "title": "Progress Navigation",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/xXOapm",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/xXOapm"
+          },
+          {
+            "title": "Responsive Carousel",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/WyxvbP",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/WyxvbP"
+          },
+          {
+            "title": "JavaScript Tabs",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/yzejjQ",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/yzejjQ"
+          },
+          {
+            "title": "Animated Banner",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/VweyOaX",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/VweyOaX"
+          },
+          {
+            "title": "3D Animation",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/jGYXYy",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/jGYXYy"
+          },
+          {
+            "title": "Banner w/ Date Code",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/RLLmZL",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/RLLmZL"
+          },
+          {
+            "title": "Open Weather Map",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/aVJQVJ",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/aVJQVJ"
+          },
+          {
+            "title": "jQuery User Selection",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/ZXYLyV",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/ZXYLyV"
+          },
+          {
+            "title": "CSS Nav Bar",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/VMwxmQ",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/VMwxmQ"
+          },
+          {
+            "title": "In Page Navigation",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/JjogojN",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/JjogojN"
+          },
+          {
+            "title": "JavaScript Quiz",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/xoLQrY",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/xoLQrY"
+          },
+          {
+            "title": "Dynamic JS Buttons",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/LdRMJb",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/LdRMJb"
+          },
+          {
+            "title": "D3 Bars w/ Labels",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/MWbwPzm",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/MWbwPzm"
+          },
+          {
+            "title": "Responsive Tabs-Accordion",
+            "code": "https://codepen.io/eastcoastdeveloper/pen/ExVjrXE",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/live/ExVjrXE"
+          }
+        ]
+      },
+      {
+        "name": "Codepen Projects",
+        "content": [
+          {
+            "title": "D3 Bar Graph",
+            "code": "https://codepen.io/eastcoastdeveloper/project/editor/69a257b6a7db65229fcada6dc23e7985",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/project/live/69a257b6a7db65229fcada6dc23e7985"
+          },
+          {
+            "title": "Web Banner Template",
+            "code": "https://codepen.io/eastcoastdeveloper/project/editor/XYyQaL",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/project/live/XYyQaL"
+          },
+          {
+            "title": "AngularJS SPA",
+            "code": "https://codepen.io/eastcoastdeveloper/project/editor/ZgbdLb",
+            "viewProject": "https://codepen.io/eastcoastdeveloper/project/live/ZgbdLb"
+          }
+        ]
+      },
+      {
+        "name": "Posts",
+        "content": [
+          {
+            "title": "UX Design All Star Tips",
+            "link": "https://codepen.io/eastcoastdeveloper/post/ux-design-description-gotchas-all-star-tips"
+          }
+        ]
+      }
+    ]
+  }

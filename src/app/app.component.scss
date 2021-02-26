@@ -1,0 +1,106 @@
+
+$black:  #313b3f;
+$blue:   #25aae1;
+$white:  #eff3f6;
+$yellow: #fcdb42;
+$orange: #e26e60;
+
+.accordion-wrapper {
+    margin: 20px auto 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 300px;
+
+    .data-block:nth-child(2){
+        border-bottom: 1px solid $white;
+    }
+}
+
+.data-block {
+    font: normal 14px sans-serif;
+    cursor: pointer;
+    position: relative;
+
+    p {
+        background-color: $black;
+        color: $yellow;
+        margin: 0;
+        padding: 10px 0 10px 10px;
+    }
+
+    .count {
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0;
+        line-height: 25px;
+
+        li {
+            display: grid;
+            padding: 5px 10px 5px 30px;
+            grid-template-areas: 'title title' 'code project';
+
+            .title {
+                color: $blue;
+            }
+
+            div:not(:first-child){
+                font-style: italic;
+            }
+        }
+        li:nth-child(even){
+            background-color: rgba(49,59,63,.8);
+        }
+        li:nth-child(odd){
+            background-color: rgba(49,59,63,.9);
+        }
+
+        li:hover {
+            background-color: $black;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+            transition: color .3s;
+        }
+        a:hover {
+            color: $yellow;
+        }
+    }
+}
+.hidden-content {
+    overflow: auto;
+    max-height: 0;
+    color: $white;
+}
+.show-content {
+    max-height: 250px !important;
+}
+
+#skills {
+        list-style-type: unset;
+        background-color: $black;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        line-height: 20px;
+        padding: 20px 0 10px 30px;
+
+        li {
+            display: block;
+            padding: 5px 10px 5px 0;
+        }
+}
+
+.borderBottom {
+    border-bottom: 1px solid $white;
+    position: absolute;
+    top: 36px;
+    width: 100%;
+    z-index: 1;
+}
