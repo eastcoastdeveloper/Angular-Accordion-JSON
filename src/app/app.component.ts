@@ -29,15 +29,8 @@ export class AppComponent implements OnInit {
       "hidden-content"
     );
     for (var j = 0; j < allGroups.length; j++) {
-      if (
-        i === j &&
-        !e.target.parentElement
-          .querySelector(".hidden-content")
-          .classList.contains("show-content")
-      ) {
-        e.target.parentElement
-          .querySelector(".hidden-content")
-          .classList.add("show-content");
+      if (i === j && !e.target.parentElement.querySelector(".hidden-content").classList.contains("show-content")) {
+        e.target.parentElement.querySelector(".hidden-content").classList.add("show-content");
       } else {
         allGroups[j].classList.remove("show-content");
       }
