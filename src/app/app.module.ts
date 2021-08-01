@@ -1,11 +1,11 @@
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { FormsModule } from "@angular/forms";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from "./app.component";
+import { AppComponent } from './app.component';
 
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import * as data from './data.json'
+import * as data from './data.json';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -13,34 +13,40 @@ import * as data from './data.json'
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  profilePanelStatus:boolean;
-  accordionData:any = [];
+  profilePanelStatus: boolean;
+  accordionData: any = [];
 
-  @ViewChild('accordionParent', {static:false}) accordionParent:ElementRef;
+  @ViewChild('accordionParent', { static: false }) accordionParent: ElementRef;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-    
-    for(let key in data.items){
-      if(data.items.hasOwnProperty(key)){
-        this.accordionData.push(data.items[key])
+    for (let key in data.items) {
+      if (data.items.hasOwnProperty(key)) {
+        this.accordionData.push(data.items[key]);
       }
     }
   }
 
   // Toggle Accordion
-  toggleSection(e:any, i:number){
+  toggleSection(e: any, i: number) {
     var allGroups = [];
-    allGroups = this.accordionParent.nativeElement.getElementsByClassName('hidden-content');
-    for(var j = 0; j < allGroups.length; j++){
-      if(i === j && !e.target.parentElement.querySelector('.hidden-content').classList.contains('show-content')){
-        e.target.parentElement.querySelector('.hidden-content').classList.add('show-content');
+    allGroups = this.accordionParent.nativeElement.getElementsByClassName(
+      'hidden-content'
+    );
+    for (var j = 0; j < allGroups.length; j++) {
+      if (
+        i === j &&
+        !e.target.parentElement
+          .querySelector('.hidden-content')
+          .classList.contains('show-content')
+      ) {
+        e.target.parentElement
+          .querySelector('.hidden-content')
+          .classList.add('show-content');
       } else {
         allGroups[j].classList.remove('show-content');
       }
     }
   }
-
-
 }
