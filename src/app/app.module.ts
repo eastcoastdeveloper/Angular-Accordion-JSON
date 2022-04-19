@@ -10,7 +10,7 @@ import * as data from './data.json';
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [AppComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
   profilePanelStatus: boolean;
@@ -31,9 +31,10 @@ export class AppModule {
   // Toggle Accordion
   toggleSection(e: any, i: number) {
     var allGroups = [];
-    allGroups = this.accordionParent.nativeElement.getElementsByClassName(
-      'hidden-content'
-    );
+    allGroups =
+      this.accordionParent.nativeElement.getElementsByClassName(
+        'hidden-content'
+      );
     for (var j = 0; j < allGroups.length; j++) {
       if (
         i === j &&
