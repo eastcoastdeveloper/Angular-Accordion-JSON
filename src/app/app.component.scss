@@ -45,6 +45,19 @@ $yellow: #d9a74a;
 
       .title {
         color: $blue;
+        grid-area: title;
+      }
+
+      .code-link {
+        a {
+          grid-area: code;
+        }
+      }
+
+      .project-link {
+        a {
+          grid-area: project;
+        }
       }
 
       div:not(:first-child) {

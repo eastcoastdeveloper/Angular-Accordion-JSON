@@ -6,69 +6,30 @@
     <div class="hidden-content">
       <ul *ngIf="i === 0">
         <li *ngFor="let posts of item.content; let j = index">
-          <div class="title" style="grid-area: title;">{{ posts.item }}</div>
+          <div class="title">{{ posts.item }}</div>
         </li>
       </ul>
       <ul id="skills" *ngIf="i === 1">
         <li *ngFor="let listElems of item.content; let j = index">
-          <div class="title" style="grid-area: title;">
-            {{ listElems.title }}
-          </div>
+          <div class="title">{{ listElems.title }}</div>
         </li>
       </ul>
       <ul *ngIf="i === 2 || i === 3 || i === 4">
         <li *ngFor="let listElems of item.content; let j = index">
-          <div class="title" style="grid-area: title;">
-            {{ listElems.title }}
+          <div class="title">{{ listElems.title }}</div>
+          <div class="code-link">
+            <a href="{{ listElems.code }}" target="_blank">code</a>
           </div>
-          <div>
-            <a
-              href="{{ listElems.code }}"
-              target="_blank"
-              style="grid-area: code"
-              >code</a
-            >
-          </div>
-          <div>
-            <a
-              href="{{ listElems.viewProject }}"
-              target="_blank"
-              style="grid-area: project"
-              >view project</a
-            >
-          </div>
-        </li>
-      </ul>
-      <ul *ngIf="i === 4">
-        <li *ngFor="let listElems of item.content; let j = index">
-          <div class="title" style="grid-area: title;">
-            {{ listElems.title }}
-          </div>
-          <div>
-            <a
-              href="{{ listElems.code }}"
-              target="_blank"
-              style="grid-area: code"
-              >code</a
-            >
-          </div>
-          <div>
-            <a
-              href="{{ listElems.viewProject }}"
-              target="_blank"
-              style="grid-area: project"
-              >view project</a
-            >
+          <div class="project-link">
+            <a href="{{ listElems.viewProject }}" target="_blank">view project</a>
           </div>
         </li>
       </ul>
       <ul *ngIf="i === 5">
         <li *ngFor="let posts of item.content; let j = index">
-          <div class="title" style="grid-area: title;">{{ posts.title }}</div>
-          <div>
-            <a href="{{ posts.link }}" target="_blank" style="grid-area: code"
-              >Read the post</a
-            >
+          <div class="title">{{ posts.title }}</div>
+          <div class="code-link">
+            <a href="{{ posts.link }}" target="_blank">Read the post</a>
           </div>
         </li>
       </ul>
