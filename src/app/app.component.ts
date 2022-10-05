@@ -8,7 +8,6 @@ import * as data from './data.json';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  profilePanelStatus: boolean;
   accordionData: AccordionData[] = [];
 
   @ViewChild('accordionParent', { static: false }) accordionParent: ElementRef;
