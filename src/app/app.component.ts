@@ -1,6 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { AccordionData } from './accordion.interface';
-import * as data from './data.json';
+// import * as data from './data.json';
 
 @Component({
   selector: 'my-app',
@@ -12,14 +13,19 @@ export class AppComponent implements OnInit {
 
   @ViewChild('accordionParent', { static: false }) accordionParent: ElementRef;
 
-  constructor() {}
+  constructor(private _http: HttpClient) {
+    
+  }
 
   ngOnInit(): void {
-    for (let key in data.items) {
-      if (data.items.hasOwnProperty(key)) {
-        this.accordionData.push(data.items[key]);
-      }
-    }
+    this._http.get('assets/data.json').subscribe(val => {
+      console.log(val)
+    })
+  //   for (let key in data.items) {
+  //     if (data.items.hasOwnProperty(key)) {
+  //       this.accordionData.push(data.items[key]);
+  //     }
+  //   }
   }
 
   // Toggle Accordion
