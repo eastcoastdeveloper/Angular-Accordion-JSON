@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { take } from 'rxjs';
 import { AccordionData } from './accordion.interface';
 
 @Component({
@@ -15,9 +16,20 @@ export class AppComponent implements OnInit {
   constructor(private _http: HttpClient) {}
 
   ngOnInit(): void {
-    this._http.get<AccordionData[]>('assets/data.json').subscribe((val) => {
-      this.accordionData = val;
-    });
+    this._http
+      .get<AccordionData[]>('assets/data.json')
+      .pipe(take(1))
+      .subscribe({
+        next: (val) => {
+          this.accordionData = val;
+        },
+        error: (err) => {
+          console.log(err);
+        },
+        complete: () => {
+          console.log('finished');
+        },
+      });
   }
 
   // Toggle Accordion
@@ -42,4 +54,8 @@ export class AppComponent implements OnInit {
       }
     }
   }
+}
+
+function next(next: any, arg1: (val: any) => void) {
+  throw new Error('Function not implemented.');
 }
