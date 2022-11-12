@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
         next: (val) => {
           this.accordionData = val;
         },
-        error: (err) => {
+        error: (err:Error) => {
           console.log(err);
         },
         complete: () => {
@@ -54,8 +54,4 @@ export class AppComponent implements OnInit {
       }
     }
   }
-}
-
-function next(next: any, arg1: (val: any) => void) {
-  throw new Error('Function not implemented.');
 }
