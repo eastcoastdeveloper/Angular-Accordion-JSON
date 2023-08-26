@@ -12,12 +12,6 @@
         "item": "Backend Development"
       },
       {
-        "item": "Angular"
-      },
-      {
-        "item": "AngularJS"
-      },
-      {
         "item": "Data Driven Development"
       },
       {
@@ -25,9 +19,6 @@
       },
       {
         "item": "Planning & Deadlines"
-      },
-      {
-        "item": "ChartJS & D3"
       },
       {
         "item": "Wordpress & Custom CMS's"
@@ -68,7 +59,10 @@
         "title": "TypeScript"
       },
       {
-        "title": ".NET"
+        "title": "Angular"
+      },
+      {
+        "title": "AngularJS"
       },
       {
         "title": "NodeJS"
@@ -77,22 +71,19 @@
         "title": "Express"
       },
       {
-        "title": "MongoDB"
-      },
-      {
-        "title": "Angular"
-      },
-      {
-        "title": "JSON"
-      },
-      {
-        "title": "Wordpress"
+        "title": "C#/ .NET"
       },
       {
         "title": "Jira & Git"
       },
       {
-        "title": "AngularJS"
+        "title": "Gitlab"
+      },
+      {
+        "item": "ChartJS & D3"
+      },
+      {
+        "title": "Wordpress"
       },
       {
         "title": "Photoshop"
