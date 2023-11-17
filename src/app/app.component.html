@@ -2,7 +2,6 @@
   <div class="data-block" *ngFor="let item of accordionData; let i = index">
     <p (click)="toggleSection($event, i)">{{ item.name }}</p>
     <p class="count">{{ item.content.length }}</p>
-    <div class="borderBottom"></div>
     <div class="hidden-content">
       <ul *ngIf="i === 0">
         <li *ngFor="let posts of item.content; let j = index">
@@ -21,7 +20,9 @@
             <a href="{{ listElems.code }}" target="_blank">code</a>
           </div>
           <div class="project-link">
-            <a href="{{ listElems.viewProject }}" target="_blank">view project</a>
+            <a href="{{ listElems.viewProject }}" target="_blank"
+              >view project</a
+            >
           </div>
         </li>
       </ul>

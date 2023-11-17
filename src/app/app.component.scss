@@ -8,10 +8,6 @@ $yellow: #d9a74a;
   border-radius: 5px;
   overflow: hidden;
   max-width: 300px;
-
-  .data-block:nth-child(2) {
-    border-bottom: 1px solid $white;
-  }
 }
 
 .data-block {
@@ -25,7 +21,6 @@ $yellow: #d9a74a;
     margin: 0;
     padding: 10px 0 10px 10px;
   }
-
   .count {
     position: absolute;
     top: 0;
@@ -85,6 +80,10 @@ $yellow: #d9a74a;
     }
   }
 }
+
+.data-block:not(:last-child) {
+  border-bottom: 1px solid $white;
+}
 .hidden-content {
   overflow: auto;
   max-height: 0;
@@ -106,12 +105,4 @@ $yellow: #d9a74a;
     display: block;
     padding: 5px 10px 5px 0;
   }
-}
-
-.borderBottom {
-  border-bottom: 1px solid $white;
-  position: absolute;
-  top: 36px;
-  width: 100%;
-  z-index: 1;
 }

@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
         next: (val) => {
           this.accordionData = val;
         },
-        error: (err:Error) => {
+        error: (err: Error) => {
           console.log(err);
         },
         complete: () => {
