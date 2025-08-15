@@ -3,23 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
-.website {
-  font: normal 14px sans-serif;
-  letter-spacing: 0.5px;
-  display: block;
-  text-align: right;
-  cursor: pointer;
-  background-color: #313b3f;
-  color: #d9a74a;
-  padding: 10px;
-  text-decoration: none;
-  margin-bottom: 15px;
-}
-
 
 @media screen and (max-width: 768px) {
   .website {
     display: none;
   }
 }
-
